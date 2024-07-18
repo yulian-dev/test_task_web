@@ -1,0 +1,188 @@
+body {
+    font-family: Manrope, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #727272;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.authorization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.authorization__block {
+    width: 500px;
+    height: 575px;
+    padding: 24px;
+    background-color: #F0F4FC;
+}
+
+.authorization__block_form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.authorization__block_content-container {
+    flex-grow: 1;
+}
+
+.authorization__block_cancel {
+    position: absolute;
+    right: 0;
+    width: 52px;
+    height: 52px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M12 10.586l4.95-4.95 1.414 1.414-4.95 4.95 4.95 4.95-1.414 1.414-4.95-4.95-4.95 4.95-1.414-1.414 4.95-4.95-4.95-4.95 1.414-1.414 4.95 4.95z'/%3E%3C/svg%3E");
+    background-size: 24px 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-color 0.2s ease;
+}
+
+.authorization__block_cancel:hover {
+    background-color: #dddddd;
+}
+
+.authorization__block_title {
+    font-size: 24px;
+    font-weight: 400;
+    color: #323232;
+    margin-top: 76px;
+    margin-bottom: 24px;
+}
+
+.authorization__block_field {
+    width: 100%;
+    height: 73px;
+    margin-bottom: 5px;
+    color: #1F4284;
+    background-color: #D7E2F6;
+    border: none;
+    border-radius: 10px;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+
+.authorization__block_field:focus {
+    outline: 2px solid #1F4284;
+}
+
+.invalid {
+    border: 2px solid red !important;
+}
+
+.authorization__block_field::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F4284;
+    opacity: 1; /* Firefox */
+}
+
+.authorization__block_field:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F4284;
+}
+
+.authorization__block_field::-ms-input-placeholder { /* Microsoft Edge */
+    font-size: 18px;
+    font-weight: 400;
+    color: #1F4284;
+}
+
+.authorization__block_remember-block {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.authorization__block_checkbox-block,
+.authorization__block_recovery-block {
+    margin-bottom: 10px;
+}
+
+.authorization__block_checkbox {
+    display: none;
+}
+
+.authorization__block_checkbox + label {
+    position: relative;
+    padding-left: 45px;
+    cursor: pointer;
+}
+
+.authorization__block_checkbox + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #323232;
+    border-radius: 3px;
+    background: transparent;
+}
+
+.authorization__block_checkbox:checked + label:before {
+    background: #1F4284;
+}
+
+.authorization__block_label {
+    font-size: 18px;
+    color: #323232;
+}
+
+.authorization__block_recovery-block {
+    margin-top: 18px;
+}
+
+.authorization__block_recovery-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #244C98;
+}
+
+.authorization__block_button_container button {
+    width: 100%;
+    height: 65px;
+    font-size: 18px;
+    border: 1px solid #244C98;
+    border-radius: 4px;
+    margin-top: 5px;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+}
+
+.authorization__block_button_container button:first-child {
+    background-color: #244C98;
+    color: #ffffff;
+}
+
+.authorization__block_button_container button:last-child {
+    background-color: #F0F4FC;
+    color: #244C98;
+}
+
+.authorization__block_button_container button:first-child:hover {
+    background-color: #1F4284;
+    color: #ffffff;
+}
+
+.authorization__block_button_container button:last-child:hover {
+    background-color: #ffffff;
+}

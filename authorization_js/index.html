@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="ems double">
+    <!--  main css file  -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!--  google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <title>Authorization</title>
+</head>
+<body>
+<section id="authorization" class="authorization">
+    <div class="authorization__block">
+        <div class="authorization__block_form">
+            <div class="authorization__block_content-container">
+                <button id="cancel" class="authorization__block_cancel"></button>
+                <h2 class="authorization__block_title">Войти в систему</h2>
+                <input id="email-phone" type="text" placeholder="Email/Телефон" class="authorization__block_field">
+                <input id="password" type="password" placeholder="Пароль" class="authorization__block_field">
+                <div class="authorization__block_remember-block">
+                    <div class="authorization__block_checkbox-block">
+                        <input type="checkbox" id="remember" class="authorization__block_checkbox">
+                        <label for="remember" class="authorization__block_label">Запомнить пароль</label>
+                    </div>
+                    <div class="authorization__block_recovery-block">
+                        <a href="#" class="authorization__block_recovery-link">Восстановить</a>
+                    </div>
+                </div>
+            </div>
+            <div class="authorization__block_button_container">
+                <button id="login">Войти</button>
+                <button id="register">Зарегистрироваться</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>
